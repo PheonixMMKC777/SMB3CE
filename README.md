@@ -17,7 +17,7 @@ Scripts are disabled on this machine...
 
 ----------Whats Done-------------
 
-All level palettes except fire floewr
+All level palettes
 
 
 
