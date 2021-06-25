@@ -16,11 +16,13 @@ Scripts are disabled on this machine...
 
 
 ----------Whats Done-------------
+
 All level palettes except fire floewr
 
 
 
 ----------To Be Done--------------
+
 Overworld Palettes
 Starman Palettes
 Missing Level Fire Flower palette
