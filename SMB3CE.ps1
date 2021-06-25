@@ -392,6 +392,46 @@ function Import_MSNT
 }
 
 
+
+
+function Import_MF
+{
+
+    
+    $MainC = $MARIO_F1.Text
+    $SkinC = $MARIO_F2.Text
+    $OutlineC = $MARIO_F3.Text
+
+    $MC = [convert]::toint32($MainC,16) 
+    $SC = [convert]::toint32($SkinC,16) 
+    $OC = [convert]::toint32($OutlineC,16) 
+
+
+    $bytes  = [System.IO.File]::ReadAllBytes("$CurrentDir\Super Mario Bros. 3 (USA).nes")
+    $offset = 0x010542
+
+           # Main
+    $bytes[$offset]   = $MC
+
+           # Skin
+    $bytes[$offset+1] = $SC
+
+           # Outline
+    $bytes[$offset+2] = $OC
+
+[System.IO.File]::WriteAllbytes("$CurrentDir\Super Mario Bros. 3 (USA).nes", $bytes)
+
+}
+
+
+
+
+
+
+
+
+
+
 function Import_MFr
 {
 
