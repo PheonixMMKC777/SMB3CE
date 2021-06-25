@@ -13,3 +13,14 @@ Scripts are disabled on this machine...
 4. At the prompt press Y to enable the script.
 5. Now the script will be allowed to run.
 6. Go back and Start RUNMEGUI.bat
+
+
+----------Whats Done-------------
+All level palettes except fire floewr
+
+
+
+----------To Be Done--------------
+Overworld Palettes
+Starman Palettes
+Missing Level Fire Flower palette
