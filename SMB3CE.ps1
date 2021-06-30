@@ -49,12 +49,24 @@ function BuildGUI
 
     Add-Type -assembly System.Windows.Forms
 
+    Add-Type -AssemblyName System.Drawing
+
     $MMKC = New-Object System.Windows.Forms.label 
     $MMKC.Location = New-Object System.Drawing.Size(105,15)
     $MMKC.Size = New-Object System.Drawing.Size(190,20)
     $MMKC.Text = "Programmed by PheonixMMKC777"
 
 
+
+    <#
+    $bmp = new-object System.Drawing.Bitmap 250,61 
+    $font = new-object System.Drawing.Font Consolas,24 
+    $brushBg = [System.Drawing.Brushes]::Yellow 
+    $brushFg = [System.Drawing.Brushes]::Black 
+    $graphics = [System.Drawing.Graphics]::FromImage($bmp) 
+    $graphics.FillRectangle($brushBg,0,0,$bmp.Width,$bmp.Height)  
+    $graphics.Dispose() 
+    #>    
 
 
 
@@ -418,6 +430,36 @@ function Import_MF
 
            # Outline
     $bytes[$offset+2] = $OC
+
+
+    #change offset for overworld after level
+    $offset = 0x037834
+
+    $bytes[$offset]   = $MC
+
+           # Skin
+    $bytes[$offset+1] = $SC
+
+           # Outline
+    $bytes[$offset+2] = $OC
+
+
+
+    #change offset for overworld outta item
+    $offset = 0x034587
+
+    $bytes[$offset]   = $MC
+
+           # Skin
+    $bytes[$offset+1] = $SC
+
+           # Outline
+    $bytes[$offset+2] = $OC
+
+
+
+
+
 
 [System.IO.File]::WriteAllbytes("$CurrentDir\Super Mario Bros. 3 (USA).nes", $bytes)
 
