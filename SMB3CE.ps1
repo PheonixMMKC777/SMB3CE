@@ -5,6 +5,14 @@
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 
+<# nvm I found the spot where the luigi map palette was
+boom boom palette can be changed in discombopulator
+he uses the regular enemy palettes
+the bottom row of enemy palettes #>
+
+# mario title screen 0x326B-0, Luigi 0x326C1-4
+# mario/Luigi overworld, 0x37820,0x37821
+
 
 $CurrentDir = Get-Location
 
@@ -372,6 +380,7 @@ function BuildGUI
 }
 
 
+#region importfunctions
 
 
 function Import_MSNT
@@ -398,6 +407,25 @@ function Import_MSNT
 
            # Outline
     $bytes[$offset+2] = $OC
+
+
+    
+    #mario TitleScreen
+    $offset = 0x0326BE 
+
+            # Main
+    $bytes[$offset]   = $MC
+
+            # Skin
+    $bytes[$offset+1] = $SC
+
+           # Outline
+    $bytes[$offset+2] = $OC
+
+
+
+
+
 
 [System.IO.File]::WriteAllbytes("$CurrentDir\Super Mario Bros. 3 (USA).nes", $bytes)
 
@@ -621,12 +649,27 @@ function Import_LSMT
            # Outline
     $bytes[$offset+2] = $OC
 
+
+    $offset = 0x0326C2
+
+           # Main
+    $bytes[$offset]   = $MC
+
+           # Skin
+    $bytes[$offset+1] = $SC
+
+           # Outline
+    $bytes[$offset+2] = $OC
+
+
+
+
 [System.IO.File]::WriteAllbytes("$CurrentDir\Super Mario Bros. 3 (USA).nes", $bytes)
 
 }
 
 
-
+#endregion importfunctions
 
 
 
