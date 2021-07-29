@@ -423,7 +423,11 @@ function Import_MSNT
     $bytes[$offset+2] = $OC
 
 
+    #mario Overworld
+    $offset = 0x037820
 
+            # Main
+    $bytes[$offset]   = $MC
 
 
 
@@ -650,6 +654,8 @@ function Import_LSMT
     $bytes[$offset+2] = $OC
 
 
+    #lugii title
+
     $offset = 0x0326C2
 
            # Main
@@ -660,6 +666,14 @@ function Import_LSMT
 
            # Outline
     $bytes[$offset+2] = $OC
+
+
+
+    #Luigi Overworld
+    $offset = 0x037821
+
+            # Main
+    $bytes[$offset]   = $MC
 
 
 
