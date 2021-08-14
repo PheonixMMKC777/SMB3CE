@@ -2,7 +2,7 @@
 
 # I smell spaghetti code cooking
 
-[System.Windows.Forms.Application]::EnableVisualStyles()
+#[System.Windows.Forms.Application]::EnableVisualStyles()
 
 
 <# nvm I found the spot where the luigi map palette was
@@ -51,7 +51,7 @@ function BuildGUI
     $iconBytes       = [Convert]::FromBase64String($iconBase64)
     $stream          = New-Object IO.MemoryStream($iconBytes, 0, $iconBytes.Length)
     $stream.Write($iconBytes, 0, $iconBytes.Length)
-    $MARIOW.Icon       = [System.Drawing.Icon]::FromHandle((New-Object System.Drawing.Bitmap -Argument $stream).GetHIcon())
+  
 
 
 
@@ -675,6 +675,9 @@ function Import_LSMT
             # Main
     $bytes[$offset]   = $MC
 
+            # Outline
+    $bytes[$offset]   = $OC
+
 
 
 
@@ -690,6 +693,7 @@ function Import_LSMT
 
 
 findrom
+
 
 
 
