@@ -28,3 +28,8 @@ Mario Luigi OUTLINES AND SKIN (Not main color)Overworld colors
 Starman Palettes
 
 
+----------Mentions----------------
+
+Considering your modding SMB3 youll want this level editor
+https://github.com/mchlnix/SMB3-Foundry/releases/tag/nightly
+
