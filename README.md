@@ -25,7 +25,7 @@ All level palettes
 
 Mario Luigi OUTLINES AND SKIN (Not main color)Overworld colors 
 
-Starman Palettes
+Starman Palettes (Maybe??)
 
 
 ----------Mentions----------------
