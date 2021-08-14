@@ -23,7 +23,7 @@ All level palettes
 
 ----------To Be Done--------------
 
-Mario Luigi OUTLINES AND SKIN (Not main color)Overworld colors 
+Mario & Luigi outline and skin on the overworld maps
 
 Starman Palettes (Maybe??)
 
