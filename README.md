@@ -20,7 +20,6 @@ Scripts are disabled on this machine...
 All level palettes
 
 
-
 ----------To Be Done--------------
 
 Mario & Luigi outline and skin on the overworld maps
