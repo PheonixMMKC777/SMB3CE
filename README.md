@@ -17,7 +17,7 @@ Scripts are disabled on this machine...
 
 ----------Whats Done-------------
 
-All level palettes
+All Player level palettes
 
 
 ----------To Be Done--------------
